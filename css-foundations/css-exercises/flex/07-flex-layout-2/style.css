@@ -59,6 +59,7 @@ body {
 
 .content {
   border: 1px solid red;
+  padding: 32px;
 }
 
 .sidebar ul {
@@ -67,10 +68,6 @@ body {
 
   flex-direction: column;
   gap: 16px;
-}
-
-.sidebar li {
-  /*  */
 }
 
 .sidebar a:link,
