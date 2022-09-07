@@ -64,7 +64,7 @@ a:hover {
 .header {
   width: auto;
   justify-content: space-between;
-  padding: 32px 16px 0 16px;
+  padding: 24px 16px 0 16px;
 }
 
 .left-links,
