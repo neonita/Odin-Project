@@ -44,11 +44,15 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+
+  /* My code */
+  padding: 16px;
 }
 
 /* My code -------------------------------------------------  */
 .main,
 .sidebar ul,
+.content,
 .footer {
   display: flex;
 }
@@ -60,6 +64,8 @@ body {
 .content {
   border: 1px solid red;
   padding: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .sidebar ul {
