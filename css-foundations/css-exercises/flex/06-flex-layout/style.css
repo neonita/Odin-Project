@@ -53,6 +53,7 @@ a:hover {
 .header,
 .left-links,
 .right-links,
+.content,
 .footer {
   display: flex;
 }
@@ -66,6 +67,12 @@ a:hover {
 .left-links,
 .right-links {
   gap: 16px;
+}
+
+.content {
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {
