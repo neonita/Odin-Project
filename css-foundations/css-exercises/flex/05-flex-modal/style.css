@@ -57,6 +57,11 @@ body {
 }
 
 /* My code */
+.header {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .left {
 }
 
