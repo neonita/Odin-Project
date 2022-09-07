@@ -45,4 +45,10 @@ a:hover {
   color: #a8a8a8;
 }
 
+.header,
+.left-links,
+.right-links {
+  display: flex;
+}
+
 /* bg grey: #eeeeee */
