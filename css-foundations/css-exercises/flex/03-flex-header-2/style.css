@@ -45,6 +45,11 @@ body {
   align-items: center;
 }
 
+.right-container {
+  width: 220px;
+  justify-content: space-between;
+}
+
 button {
   border: none;
   border-radius: 8px;
