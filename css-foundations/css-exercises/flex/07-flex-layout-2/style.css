@@ -58,3 +58,14 @@ body {
   list-style: none;
   padding-left: 0px;
 }
+
+.sidebar a:link,
+.sidebar a:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+  color: rgb(213, 213, 213);
+}
