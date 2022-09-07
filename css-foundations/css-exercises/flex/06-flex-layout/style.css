@@ -34,7 +34,7 @@ ul {
 
 a:link,
 a:visited {
-  color: #888888;
+  color: #5b5b5b;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.2s ease-in-out;
@@ -47,7 +47,8 @@ a:hover {
 
 .header,
 .left-links,
-.right-links {
+.right-links,
+.footer {
   display: flex;
 }
 
@@ -60,6 +61,13 @@ a:hover {
 .left-links,
 .right-links {
   gap: 16px;
+}
+
+.footer {
+  background-color: #eee;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
 }
 
 /* bg grey: #eeeeee */
