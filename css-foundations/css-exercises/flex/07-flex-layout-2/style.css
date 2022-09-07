@@ -47,6 +47,7 @@ body {
 
   /* My code */
   padding: 16px;
+  max-width: 300px;
 }
 
 /* My code -------------------------------------------------  */
@@ -64,6 +65,7 @@ body {
 .content {
   border: 1px solid red;
   padding: 32px;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 16px;
 }
