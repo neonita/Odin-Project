@@ -37,6 +37,7 @@ body {
 
   /* My code */
   padding: 16px;
+  flex-shrink: 0;
 }
 
 .card {
