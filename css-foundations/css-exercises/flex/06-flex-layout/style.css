@@ -51,4 +51,10 @@ a:hover {
   display: flex;
 }
 
+.header {
+  width: 100%;
+  justify-content: space-between;
+  padding: 32px 16px 0 16px;
+}
+
 /* bg grey: #eeeeee */
