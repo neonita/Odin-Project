@@ -57,6 +57,11 @@ body {
 }
 
 /* My code */
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   font-size: 20px;
   font-weight: 600;
