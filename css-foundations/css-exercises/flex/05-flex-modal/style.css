@@ -68,9 +68,6 @@ body {
   font-weight: 600;
 }
 
-.left {
-}
-
 .right {
   display: flex;
   flex-direction: column;
