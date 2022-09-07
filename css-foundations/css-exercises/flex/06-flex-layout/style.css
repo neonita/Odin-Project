@@ -25,3 +25,24 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* My code */
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: #888888;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #a8a8a8;
+}
+
+/* bg grey: #eeeeee */
