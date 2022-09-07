@@ -27,6 +27,8 @@ body {
   color: darkmagenta;
 
   /* My code */
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
@@ -43,7 +45,8 @@ body {
 }
 
 /* My code -------------------------------------------------  */
-.main {
+.main,
+.footer {
   display: flex;
 }
 
