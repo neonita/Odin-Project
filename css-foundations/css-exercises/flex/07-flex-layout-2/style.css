@@ -53,3 +53,8 @@ body {
 .content {
   border: 1px solid red;
 }
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
