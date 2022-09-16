@@ -63,7 +63,7 @@ function isGameOver() {
 }
 
 function game() {
-  let rounds = 3;
+  let rounds = 5;
   for (let i = 0; i < rounds; i++) {
     // Player's selection
     const playerSelection = String(
