@@ -7,36 +7,66 @@ function getComputerChoice() {
 
 // Plays a single round of Rock Paper Scissor.
 function playRound(playerSelection, computerSelection) {
+  //   console.log(playerSelection, computerSelection);
+
   if (playerSelection === "rock" && computerSelection === "rock") {
-    console.log("It's a tie! 🗿🗿");
+    return "It's a tie! 🗿🗿";
+    // return "tie";
   } else if (playerSelection === "rock" && computerSelection === "scissor") {
-    console.log("You Win! Rock beats scissor.");
+    playerPoints++;
+    return "You Win! Rock beats scissor.";
+    // return "win";
   } else if (playerSelection === "rock" && computerSelection === "paper") {
-    console.log("You Lose! Scissor beats rock.");
+    computerPoints++;
+    return "You Lose! Scissor beats rock.";
+    // return "lose";
   } else if (playerSelection === "paper" && computerSelection === "rock") {
-    console.log("You Win! Paper beats rock.");
+    playerPoints++;
+    return "You Win! Paper beats rock.";
+    // return "win";
   } else if (playerSelection === "paper" && computerSelection === "paper") {
-    console.log("It's a tie! 📃📃");
+    return "It's a tie! 📃📃";
+    // return "tie";
   } else if (playerSelection === "paper" && computerSelection === "scissor") {
-    console.log("You Lose! Paper beats rock.");
+    computerPoints++;
+    return "You Lose! Paper beats rock.";
+    // return "lose";
   } else if (playerSelection === "scissor" && computerSelection === "rock") {
-    console.log("You Lose! Rock beats scissor.");
+    computerPoints++;
+    return "You Lose! Rock beats scissor.";
+    // return "lose";
   } else if (playerSelection === "scissor" && computerSelection === "paper") {
-    console.log("You Win! Scissor beats paper.");
+    playerPoints++;
+    return "You Win! Scissor beats paper.";
+    // return "win";
   } else if (playerSelection === "scissor" && computerSelection === "scissor") {
-    console.log("It's a tie! ✂️✂️");
+    return "It's a tie! ✂️✂️";
+    // return "tie";
+  } else {
+    alert("Please choose rock, paper, or scissor!");
   }
+
+  console.log(`👤: ${playerPoints}, 🤖: ${computerPoints}`);
+  return playerPoints && computerPoints;
 }
 
 function game() {
-  playRound(playerSelection, computerSelection);
+  let rounds = 3;
+  for (let i = 0; i < rounds; i++) {
+    // Player's selection
+    const playerSelection = String(
+      prompt("Rock, Paper, or Scissor?")
+    ).toLowerCase();
+
+    // Computer's selection
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+    console.log(playerPoints, computerPoints);
+  }
 }
 
-// Player's selection
-const playerSelection = String(
-  prompt("Rock, Paper, or Scissors?")
-).toLowerCase();
-// Computer's selection
-const computerSelection = getComputerChoice();
+let playerPoints = 0;
+let computerPoints = 0;
 
-console.log(playRound(playerSelection, computerSelection));
+// Initalize game()
+game();
