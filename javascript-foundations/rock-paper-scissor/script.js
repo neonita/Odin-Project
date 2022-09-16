@@ -14,30 +14,30 @@ function playRound(playerSelection, computerSelection) {
     // return "tie";
   } else if (playerSelection === "rock" && computerSelection === "scissor") {
     playerPoints++;
-    return "You Win! Rock beats scissor.";
+    return "You WIN this round! Rock beats scissor.";
     // return "win";
   } else if (playerSelection === "rock" && computerSelection === "paper") {
     computerPoints++;
-    return "You Lose! Scissor beats rock.";
+    return "You LOSE this round! Scissor beats rock.";
     // return "lose";
   } else if (playerSelection === "paper" && computerSelection === "rock") {
     playerPoints++;
-    return "You Win! Paper beats rock.";
+    return "You WIN this round! Paper beats rock.";
     // return "win";
   } else if (playerSelection === "paper" && computerSelection === "paper") {
     return "It's a tie! 📃📃";
     // return "tie";
   } else if (playerSelection === "paper" && computerSelection === "scissor") {
     computerPoints++;
-    return "You Lose! Paper beats rock.";
+    return "You LOSE this round! Paper beats rock.";
     // return "lose";
   } else if (playerSelection === "scissor" && computerSelection === "rock") {
     computerPoints++;
-    return "You Lose! Rock beats scissor.";
+    return "You LOSE this round! Rock beats scissor.";
     // return "lose";
   } else if (playerSelection === "scissor" && computerSelection === "paper") {
     playerPoints++;
-    return "You Win! Scissor beats paper.";
+    return "You WIN this round! Scissor beats paper.";
     // return "win";
   } else if (playerSelection === "scissor" && computerSelection === "scissor") {
     return "It's a tie! ✂️✂️";
@@ -50,6 +50,18 @@ function playRound(playerSelection, computerSelection) {
   return playerPoints && computerPoints;
 }
 
+// Displays player's and computer's points and displays who won & who lose.
+function isGameOver() {
+  console.log("GAME OVER 🥊: " + playerPoints + " | " + computerPoints);
+  if (playerPoints > computerPoints) {
+    console.log("🎊🏆 YOU WIN! 🏆🎊");
+  } else if (playerPoints < computerPoints) {
+    console.log("❌🤖 YOU LOSE! COMPUTER WINS 🤖❌");
+  } else {
+    console.log("⚖️ IT'S A TIE! ⚖️");
+  }
+}
+
 function game() {
   let rounds = 3;
   for (let i = 0; i < rounds; i++) {
@@ -60,9 +72,13 @@ function game() {
 
     // Computer's selection
     const computerSelection = getComputerChoice();
+
     console.log(playRound(playerSelection, computerSelection));
     console.log(playerPoints, computerPoints);
   }
+
+  //   Executes after 5 rounds
+  isGameOver();
 }
 
 let playerPoints = 0;
